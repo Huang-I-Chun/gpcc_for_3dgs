@@ -49,14 +49,14 @@ The argument usage example can ref to `usage/compress_decode.ipynb`.
 
 ## Tenichical Details
 
-- How do we extend the G-PCC to make it available to compress many more attributes?
+### How do we extend the G-PCC to make it available to compress many more attributes?
 
 The original codec provides two kinds of attribute compression: color and reflectence. We refer to the reflectance compression method, which compresses all the attributes separately. Therefore I believe it is possible to reach better compression ratio while you compress multiple attributes together (like what color do).
 
-- How do we deal with floating points and negative values in 3D Gaussian?
+### How do we deal with floating points and negative values in 3D Gaussian?
 
 We first read all attributes and identifying the minimum value among them. Each attribute value is then adjusted by subtracting this minimum value, ensuring that all resulting values are non-negative. Following this adjustment, the values are normalized to a range between 0 and 1. They are then scaled by a factor `{attr}_scale`. These processing steps and the parameters used (such as the minimum value and scaling factor) are recorded within the compressed binary file. During the decoding phase, the decoder retrieves these parameters from the binary file to reverse the earlier adjustments, and restores the original floating points and accounts for any negative values that were present initially.
 
-- How do we process `nx`, `ny`, and `nz`?
+### How do we process `nx`, `ny`, and `nz`?
 
 Since `nx`, `ny`, and `nz` are all zero across all 3D Gaussian, we ignore them in the compression phase, but in the decode phase, we will add them back in the decode ply.
