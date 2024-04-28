@@ -1,0 +1,1552 @@
+MPEG PCC tmc3 version 
+main() start
++ Effective configuration parameters
+    mode                  : 1
+    firstFrameNum         : 0
+    f_dc_0_scale          : 65535
+    f_dc_1_scale          : 65535
+    f_dc_2_scale          : 65535
+    f_rest_0_scale        : 65535
+    f_rest_1_scale        : 65535
+    f_rest_2_scale        : 65535
+    f_rest_3_scale        : 65535
+    f_rest_4_scale        : 65535
+    f_rest_5_scale        : 65535
+    f_rest_6_scale        : 65535
+    f_rest_7_scale        : 65535
+    f_rest_8_scale        : 65535
+    f_rest_9_scale        : 65535
+    f_rest_10_scale       : 65535
+    f_rest_11_scale       : 65535
+    f_rest_12_scale       : 65535
+    f_rest_13_scale       : 65535
+    f_rest_14_scale       : 65535
+    f_rest_15_scale       : 65535
+    f_rest_16_scale       : 65535
+    f_rest_17_scale       : 65535
+    f_rest_18_scale       : 65535
+    f_rest_19_scale       : 65535
+    f_rest_20_scale       : 65535
+    f_rest_21_scale       : 65535
+    f_rest_22_scale       : 65535
+    f_rest_23_scale       : 65535
+    f_rest_24_scale       : 65535
+    f_rest_25_scale       : 65535
+    f_rest_26_scale       : 65535
+    f_rest_27_scale       : 65535
+    f_rest_28_scale       : 65535
+    f_rest_29_scale       : 65535
+    f_rest_30_scale       : 65535
+    f_rest_31_scale       : 65535
+    f_rest_32_scale       : 65535
+    f_rest_33_scale       : 65535
+    f_rest_34_scale       : 65535
+    f_rest_35_scale       : 65535
+    f_rest_36_scale       : 65535
+    f_rest_37_scale       : 65535
+    f_rest_38_scale       : 65535
+    f_rest_39_scale       : 65535
+    f_rest_40_scale       : 65535
+    f_rest_41_scale       : 65535
+    f_rest_42_scale       : 65535
+    f_rest_43_scale       : 65535
+    f_rest_44_scale       : 65535
+    opacity_scale         : 65535
+    scale_0_scale         : 65535
+    scale_1_scale         : 65535
+    scale_2_scale         : 65535
+    rot_0_scale           : 65535
+    rot_1_scale           : 65535
+    rot_2_scale           : 65535
+    rot_3_scale           : 65535
+    frameCount            : 1
+    reconstructedDataPath : "decode.ply"
+    uncompressedDataPath  : ""
+    compressedStreamPath  : "bonsai_50p.bin"
+    postRecolorPath       : ""
+    preInvScalePath       : ""
+    convertPlyColourspace : 1
+    outputBinaryPly       : 0
+    outputUnitLength      : 1
+    outputScaling         : 1 (External)
+    outputPrecisionBits   : -1
+    skipOctreeLayers : 0
+    decodeMaxPoints  : 0
+
+SequenceDecoder::decompress start
+readTlv start
+buf->type = 0
+readTlv start
+buf->type = 1
+readTlv start
+buf->type = 3
+readTlv start
+buf->type = 3
+readTlv start
+buf->type = 3
+readTlv start
+buf->type = 3
+readTlv start
+buf->type = 3
+readTlv start
+buf->type = 3
+readTlv start
+buf->type = 3
+readTlv start
+buf->type = 3
+readTlv start
+buf->type = 3
+readTlv start
+buf->type = 3
+readTlv start
+buf->type = 3
+readTlv start
+buf->type = 3
+readTlv start
+buf->type = 3
+readTlv start
+buf->type = 3
+readTlv start
+buf->type = 3
+readTlv start
+buf->type = 3
+readTlv start
+buf->type = 3
+readTlv start
+buf->type = 3
+readTlv start
+buf->type = 3
+readTlv start
+buf->type = 3
+readTlv start
+buf->type = 3
+readTlv start
+buf->type = 3
+readTlv start
+buf->type = 3
+readTlv start
+buf->type = 3
+readTlv start
+buf->type = 3
+readTlv start
+buf->type = 3
+readTlv start
+buf->type = 3
+readTlv start
+buf->type = 3
+readTlv start
+buf->type = 3
+readTlv start
+buf->type = 3
+readTlv start
+buf->type = 3
+readTlv start
+buf->type = 3
+readTlv start
+buf->type = 3
+readTlv start
+buf->type = 3
+readTlv start
+buf->type = 3
+readTlv start
+buf->type = 3
+readTlv start
+buf->type = 3
+readTlv start
+buf->type = 3
+readTlv start
+buf->type = 3
+readTlv start
+buf->type = 3
+readTlv start
+buf->type = 3
+readTlv start
+buf->type = 3
+readTlv start
+buf->type = 3
+readTlv start
+buf->type = 3
+readTlv start
+buf->type = 3
+readTlv start
+buf->type = 3
+readTlv start
+buf->type = 3
+readTlv start
+buf->type = 3
+readTlv start
+buf->type = 3
+readTlv start
+buf->type = 3
+readTlv start
+buf->type = 3
+readTlv start
+buf->type = 3
+readTlv start
+buf->type = 3
+readTlv start
+buf->type = 3
+readTlv start
+buf->type = 3
+readTlv start
+buf->type = 3
+readTlv start
+buf->type = 2
+PCCTMC3Decoder3::decodeGeometryBrick start
+positions bitstream size 275 B
+positions processing time (user): 0.004 s
+
+readTlv start
+buf->type = 4
+PCCTMC3Decoder3::decodeAttributeBrick start
+AttributeDecoder::decode start
+sliceQpLuma: 4
+attr_desc.attr_num_dimensions_minus1 = 4
+sliceQpLuma: 4
+attribCount = 1
+voxelCount = 50
+uraht_process start
+0
+numPoints = 50
+numAttrs = 1
+enableACInterPred = 0
+attrsLf[0] = 0
+attrsLf.size() = 50
+weightsLf.size() = 50
+attrsHf[0] = 0
+ichun: 50
+ichun: 50
+rahtExtension: 1
+f_dc_0s bitstream size 55 B
+f_dc_0s processing time (user): 0 s
+
+readTlv start
+buf->type = 4
+PCCTMC3Decoder3::decodeAttributeBrick start
+AttributeDecoder::decode start
+sliceQpLuma: 4
+attr_desc.attr_num_dimensions_minus1 = 5
+sliceQpLuma: 4
+attribCount = 1
+voxelCount = 50
+uraht_process start
+0
+numPoints = 50
+numAttrs = 1
+enableACInterPred = 0
+attrsLf[0] = 0
+attrsLf.size() = 50
+weightsLf.size() = 50
+attrsHf[0] = 0
+ichun: 50
+ichun: 50
+rahtExtension: 1
+f_dc_1s bitstream size 57 B
+f_dc_1s processing time (user): 0 s
+
+readTlv start
+buf->type = 4
+PCCTMC3Decoder3::decodeAttributeBrick start
+AttributeDecoder::decode start
+sliceQpLuma: 4
+attr_desc.attr_num_dimensions_minus1 = 6
+sliceQpLuma: 4
+attribCount = 1
+voxelCount = 50
+uraht_process start
+0
+numPoints = 50
+numAttrs = 1
+enableACInterPred = 0
+attrsLf[0] = 0
+attrsLf.size() = 50
+weightsLf.size() = 50
+attrsHf[0] = 0
+ichun: 50
+ichun: 50
+rahtExtension: 1
+f_dc_2s bitstream size 56 B
+f_dc_2s processing time (user): 0 s
+
+readTlv start
+buf->type = 4
+PCCTMC3Decoder3::decodeAttributeBrick start
+AttributeDecoder::decode start
+sliceQpLuma: 4
+attr_desc.attr_num_dimensions_minus1 = 14
+sliceQpLuma: 4
+attribCount = 1
+voxelCount = 50
+uraht_process start
+0
+numPoints = 50
+numAttrs = 1
+enableACInterPred = 0
+attrsLf[0] = 0
+attrsLf.size() = 50
+weightsLf.size() = 50
+attrsHf[0] = 0
+ichun: 50
+ichun: 50
+rahtExtension: 1
+1937006384s bitstream size 113 B
+1937006384s processing time (user): 0 s
+
+readTlv start
+buf->type = 4
+PCCTMC3Decoder3::decodeAttributeBrick start
+AttributeDecoder::decode start
+sliceQpLuma: 4
+attr_desc.attr_num_dimensions_minus1 = 15
+sliceQpLuma: 4
+attribCount = 1
+voxelCount = 50
+uraht_process start
+0
+numPoints = 50
+numAttrs = 1
+enableACInterPred = 0
+attrsLf[0] = 0
+attrsLf.size() = 50
+weightsLf.size() = 50
+attrsHf[0] = 0
+ichun: 50
+ichun: 50
+rahtExtension: 1
+1937006385s bitstream size 117 B
+1937006385s processing time (user): 0 s
+
+readTlv start
+buf->type = 4
+PCCTMC3Decoder3::decodeAttributeBrick start
+AttributeDecoder::decode start
+sliceQpLuma: 4
+attr_desc.attr_num_dimensions_minus1 = 24
+sliceQpLuma: 4
+attribCount = 1
+voxelCount = 50
+uraht_process start
+0
+numPoints = 50
+numAttrs = 1
+enableACInterPred = 0
+attrsLf[0] = 0
+attrsLf.size() = 50
+weightsLf.size() = 50
+attrsHf[0] = 0
+ichun: 50
+ichun: 50
+rahtExtension: 1
+1952395568s bitstream size 81 B
+1952395568s processing time (user): 0 s
+
+readTlv start
+buf->type = 4
+PCCTMC3Decoder3::decodeAttributeBrick start
+AttributeDecoder::decode start
+sliceQpLuma: 4
+attr_desc.attr_num_dimensions_minus1 = 25
+sliceQpLuma: 4
+attribCount = 1
+voxelCount = 50
+uraht_process start
+0
+numPoints = 50
+numAttrs = 1
+enableACInterPred = 0
+attrsLf[0] = 0
+attrsLf.size() = 50
+weightsLf.size() = 50
+attrsHf[0] = 0
+ichun: 50
+ichun: 50
+rahtExtension: 1
+1952395569s bitstream size 83 B
+1952395569s processing time (user): 0 s
+
+readTlv start
+buf->type = 4
+PCCTMC3Decoder3::decodeAttributeBrick start
+AttributeDecoder::decode start
+sliceQpLuma: 4
+attr_desc.attr_num_dimensions_minus1 = 26
+sliceQpLuma: 4
+attribCount = 1
+voxelCount = 50
+uraht_process start
+0
+numPoints = 50
+numAttrs = 1
+enableACInterPred = 0
+attrsLf[0] = 0
+attrsLf.size() = 50
+weightsLf.size() = 50
+attrsHf[0] = 0
+ichun: 50
+ichun: 50
+rahtExtension: 1
+1952395570s bitstream size 86 B
+1952395570s processing time (user): 0 s
+
+readTlv start
+buf->type = 4
+PCCTMC3Decoder3::decodeAttributeBrick start
+AttributeDecoder::decode start
+sliceQpLuma: 4
+attr_desc.attr_num_dimensions_minus1 = 27
+sliceQpLuma: 4
+attribCount = 1
+voxelCount = 50
+uraht_process start
+0
+numPoints = 50
+numAttrs = 1
+enableACInterPred = 0
+attrsLf[0] = 0
+attrsLf.size() = 50
+weightsLf.size() = 50
+attrsHf[0] = 0
+ichun: 50
+ichun: 50
+rahtExtension: 1
+1952395571s bitstream size 82 B
+1952395571s processing time (user): 0 s
+
+readTlv start
+buf->type = 4
+PCCTMC3Decoder3::decodeAttributeBrick start
+AttributeDecoder::decode start
+sliceQpLuma: 4
+attr_desc.attr_num_dimensions_minus1 = 28
+sliceQpLuma: 4
+attribCount = 1
+voxelCount = 50
+uraht_process start
+0
+numPoints = 50
+numAttrs = 1
+enableACInterPred = 0
+attrsLf[0] = 0
+attrsLf.size() = 50
+weightsLf.size() = 50
+attrsHf[0] = 0
+ichun: 50
+ichun: 50
+rahtExtension: 1
+1952395572s bitstream size 85 B
+1952395572s processing time (user): 0 s
+
+readTlv start
+buf->type = 4
+PCCTMC3Decoder3::decodeAttributeBrick start
+AttributeDecoder::decode start
+sliceQpLuma: 4
+attr_desc.attr_num_dimensions_minus1 = 29
+sliceQpLuma: 4
+attribCount = 1
+voxelCount = 50
+uraht_process start
+0
+numPoints = 50
+numAttrs = 1
+enableACInterPred = 0
+attrsLf[0] = 0
+attrsLf.size() = 50
+weightsLf.size() = 50
+attrsHf[0] = 0
+ichun: 50
+ichun: 50
+rahtExtension: 1
+1952395573s bitstream size 82 B
+1952395573s processing time (user): 0 s
+
+readTlv start
+buf->type = 4
+PCCTMC3Decoder3::decodeAttributeBrick start
+AttributeDecoder::decode start
+sliceQpLuma: 4
+attr_desc.attr_num_dimensions_minus1 = 30
+sliceQpLuma: 4
+attribCount = 1
+voxelCount = 50
+uraht_process start
+0
+numPoints = 50
+numAttrs = 1
+enableACInterPred = 0
+attrsLf[0] = 0
+attrsLf.size() = 50
+weightsLf.size() = 50
+attrsHf[0] = 0
+ichun: 50
+ichun: 50
+rahtExtension: 1
+1952395574s bitstream size 87 B
+1952395574s processing time (user): 0 s
+
+readTlv start
+buf->type = 4
+PCCTMC3Decoder3::decodeAttributeBrick start
+AttributeDecoder::decode start
+sliceQpLuma: 4
+attr_desc.attr_num_dimensions_minus1 = 31
+sliceQpLuma: 4
+attribCount = 1
+voxelCount = 50
+uraht_process start
+0
+numPoints = 50
+numAttrs = 1
+enableACInterPred = 0
+attrsLf[0] = 0
+attrsLf.size() = 50
+weightsLf.size() = 50
+attrsHf[0] = 0
+ichun: 50
+ichun: 50
+rahtExtension: 1
+1952395575s bitstream size 81 B
+1952395575s processing time (user): 0 s
+
+readTlv start
+buf->type = 4
+PCCTMC3Decoder3::decodeAttributeBrick start
+AttributeDecoder::decode start
+sliceQpLuma: 4
+attr_desc.attr_num_dimensions_minus1 = 32
+sliceQpLuma: 4
+attribCount = 1
+voxelCount = 50
+uraht_process start
+0
+numPoints = 50
+numAttrs = 1
+enableACInterPred = 0
+attrsLf[0] = 0
+attrsLf.size() = 50
+weightsLf.size() = 50
+attrsHf[0] = 0
+ichun: 50
+ichun: 50
+rahtExtension: 1
+1952395576s bitstream size 84 B
+1952395576s processing time (user): 0 s
+
+readTlv start
+buf->type = 4
+PCCTMC3Decoder3::decodeAttributeBrick start
+AttributeDecoder::decode start
+sliceQpLuma: 4
+attr_desc.attr_num_dimensions_minus1 = 33
+sliceQpLuma: 4
+attribCount = 1
+voxelCount = 50
+uraht_process start
+0
+numPoints = 50
+numAttrs = 1
+enableACInterPred = 0
+attrsLf[0] = 0
+attrsLf.size() = 50
+weightsLf.size() = 50
+attrsHf[0] = 0
+ichun: 50
+ichun: 50
+rahtExtension: 1
+1952395577s bitstream size 85 B
+1952395577s processing time (user): 0 s
+
+readTlv start
+buf->type = 4
+PCCTMC3Decoder3::decodeAttributeBrick start
+AttributeDecoder::decode start
+sliceQpLuma: 4
+attr_desc.attr_num_dimensions_minus1 = 16
+sliceQpLuma: 4
+attribCount = 1
+voxelCount = 50
+uraht_process start
+0
+numPoints = 50
+numAttrs = 1
+enableACInterPred = 0
+attrsLf[0] = 0
+attrsLf.size() = 50
+weightsLf.size() = 50
+attrsHf[0] = 0
+ichun: 50
+ichun: 50
+rahtExtension: 1
+1937006386s bitstream size 112 B
+1937006386s processing time (user): 0 s
+
+readTlv start
+buf->type = 4
+PCCTMC3Decoder3::decodeAttributeBrick start
+AttributeDecoder::decode start
+sliceQpLuma: 4
+attr_desc.attr_num_dimensions_minus1 = 34
+sliceQpLuma: 4
+attribCount = 1
+voxelCount = 50
+uraht_process start
+0
+numPoints = 50
+numAttrs = 1
+enableACInterPred = 0
+attrsLf[0] = 0
+attrsLf.size() = 50
+weightsLf.size() = 50
+attrsHf[0] = 0
+ichun: 50
+ichun: 50
+rahtExtension: 1
+1952395824s bitstream size 80 B
+1952395824s processing time (user): 0 s
+
+readTlv start
+buf->type = 4
+PCCTMC3Decoder3::decodeAttributeBrick start
+AttributeDecoder::decode start
+sliceQpLuma: 4
+attr_desc.attr_num_dimensions_minus1 = 35
+sliceQpLuma: 4
+attribCount = 1
+voxelCount = 50
+uraht_process start
+0
+numPoints = 50
+numAttrs = 1
+enableACInterPred = 0
+attrsLf[0] = 0
+attrsLf.size() = 50
+weightsLf.size() = 50
+attrsHf[0] = 0
+ichun: 50
+ichun: 50
+rahtExtension: 1
+1952395825s bitstream size 83 B
+1952395825s processing time (user): 0 s
+
+readTlv start
+buf->type = 4
+PCCTMC3Decoder3::decodeAttributeBrick start
+AttributeDecoder::decode start
+sliceQpLuma: 4
+attr_desc.attr_num_dimensions_minus1 = 36
+sliceQpLuma: 4
+attribCount = 1
+voxelCount = 50
+uraht_process start
+0
+numPoints = 50
+numAttrs = 1
+enableACInterPred = 0
+attrsLf[0] = 0
+attrsLf.size() = 50
+weightsLf.size() = 50
+attrsHf[0] = 0
+ichun: 50
+ichun: 50
+rahtExtension: 1
+1952395826s bitstream size 83 B
+1952395826s processing time (user): 0 s
+
+readTlv start
+buf->type = 4
+PCCTMC3Decoder3::decodeAttributeBrick start
+AttributeDecoder::decode start
+sliceQpLuma: 4
+attr_desc.attr_num_dimensions_minus1 = 37
+sliceQpLuma: 4
+attribCount = 1
+voxelCount = 50
+uraht_process start
+0
+numPoints = 50
+numAttrs = 1
+enableACInterPred = 0
+attrsLf[0] = 0
+attrsLf.size() = 50
+weightsLf.size() = 50
+attrsHf[0] = 0
+ichun: 50
+ichun: 50
+rahtExtension: 1
+1952395827s bitstream size 84 B
+1952395827s processing time (user): 0 s
+
+readTlv start
+buf->type = 4
+PCCTMC3Decoder3::decodeAttributeBrick start
+AttributeDecoder::decode start
+sliceQpLuma: 4
+attr_desc.attr_num_dimensions_minus1 = 38
+sliceQpLuma: 4
+attribCount = 1
+voxelCount = 50
+uraht_process start
+0
+numPoints = 50
+numAttrs = 1
+enableACInterPred = 0
+attrsLf[0] = 0
+attrsLf.size() = 50
+weightsLf.size() = 50
+attrsHf[0] = 0
+ichun: 50
+ichun: 50
+rahtExtension: 1
+1952395828s bitstream size 83 B
+1952395828s processing time (user): 0 s
+
+readTlv start
+buf->type = 4
+PCCTMC3Decoder3::decodeAttributeBrick start
+AttributeDecoder::decode start
+sliceQpLuma: 4
+attr_desc.attr_num_dimensions_minus1 = 39
+sliceQpLuma: 4
+attribCount = 1
+voxelCount = 50
+uraht_process start
+0
+numPoints = 50
+numAttrs = 1
+enableACInterPred = 0
+attrsLf[0] = 0
+attrsLf.size() = 50
+weightsLf.size() = 50
+attrsHf[0] = 0
+ichun: 50
+ichun: 50
+rahtExtension: 1
+1952395829s bitstream size 86 B
+1952395829s processing time (user): 0 s
+
+readTlv start
+buf->type = 4
+PCCTMC3Decoder3::decodeAttributeBrick start
+AttributeDecoder::decode start
+sliceQpLuma: 4
+attr_desc.attr_num_dimensions_minus1 = 40
+sliceQpLuma: 4
+attribCount = 1
+voxelCount = 50
+uraht_process start
+0
+numPoints = 50
+numAttrs = 1
+enableACInterPred = 0
+attrsLf[0] = 0
+attrsLf.size() = 50
+weightsLf.size() = 50
+attrsHf[0] = 0
+ichun: 50
+ichun: 50
+rahtExtension: 1
+1952395830s bitstream size 84 B
+1952395830s processing time (user): 0 s
+
+readTlv start
+buf->type = 4
+PCCTMC3Decoder3::decodeAttributeBrick start
+AttributeDecoder::decode start
+sliceQpLuma: 4
+attr_desc.attr_num_dimensions_minus1 = 41
+sliceQpLuma: 4
+attribCount = 1
+voxelCount = 50
+uraht_process start
+0
+numPoints = 50
+numAttrs = 1
+enableACInterPred = 0
+attrsLf[0] = 0
+attrsLf.size() = 50
+weightsLf.size() = 50
+attrsHf[0] = 0
+ichun: 50
+ichun: 50
+rahtExtension: 1
+1952395831s bitstream size 88 B
+1952395831s processing time (user): 0 s
+
+readTlv start
+buf->type = 4
+PCCTMC3Decoder3::decodeAttributeBrick start
+AttributeDecoder::decode start
+sliceQpLuma: 4
+attr_desc.attr_num_dimensions_minus1 = 42
+sliceQpLuma: 4
+attribCount = 1
+voxelCount = 50
+uraht_process start
+0
+numPoints = 50
+numAttrs = 1
+enableACInterPred = 0
+attrsLf[0] = 0
+attrsLf.size() = 50
+weightsLf.size() = 50
+attrsHf[0] = 0
+ichun: 50
+ichun: 50
+rahtExtension: 1
+1952395832s bitstream size 84 B
+1952395832s processing time (user): 0 s
+
+readTlv start
+buf->type = 4
+PCCTMC3Decoder3::decodeAttributeBrick start
+AttributeDecoder::decode start
+sliceQpLuma: 4
+attr_desc.attr_num_dimensions_minus1 = 43
+sliceQpLuma: 4
+attribCount = 1
+voxelCount = 50
+uraht_process start
+0
+numPoints = 50
+numAttrs = 1
+enableACInterPred = 0
+attrsLf[0] = 0
+attrsLf.size() = 50
+weightsLf.size() = 50
+attrsHf[0] = 0
+ichun: 50
+ichun: 50
+rahtExtension: 1
+1952395833s bitstream size 85 B
+1952395833s processing time (user): 0 s
+
+readTlv start
+buf->type = 4
+PCCTMC3Decoder3::decodeAttributeBrick start
+AttributeDecoder::decode start
+sliceQpLuma: 4
+attr_desc.attr_num_dimensions_minus1 = 17
+sliceQpLuma: 4
+attribCount = 1
+voxelCount = 50
+uraht_process start
+0
+numPoints = 50
+numAttrs = 1
+enableACInterPred = 0
+attrsLf[0] = 0
+attrsLf.size() = 50
+weightsLf.size() = 50
+attrsHf[0] = 0
+ichun: 50
+ichun: 50
+rahtExtension: 1
+1937006387s bitstream size 113 B
+1937006387s processing time (user): 0 s
+
+readTlv start
+buf->type = 4
+PCCTMC3Decoder3::decodeAttributeBrick start
+AttributeDecoder::decode start
+sliceQpLuma: 4
+attr_desc.attr_num_dimensions_minus1 = 44
+sliceQpLuma: 4
+attribCount = 1
+voxelCount = 50
+uraht_process start
+0
+numPoints = 50
+numAttrs = 1
+enableACInterPred = 0
+attrsLf[0] = 0
+attrsLf.size() = 50
+weightsLf.size() = 50
+attrsHf[0] = 0
+ichun: 50
+ichun: 50
+rahtExtension: 1
+1952396080s bitstream size 82 B
+1952396080s processing time (user): 0 s
+
+readTlv start
+buf->type = 4
+PCCTMC3Decoder3::decodeAttributeBrick start
+AttributeDecoder::decode start
+sliceQpLuma: 4
+attr_desc.attr_num_dimensions_minus1 = 45
+sliceQpLuma: 4
+attribCount = 1
+voxelCount = 50
+uraht_process start
+0
+numPoints = 50
+numAttrs = 1
+enableACInterPred = 0
+attrsLf[0] = 0
+attrsLf.size() = 50
+weightsLf.size() = 50
+attrsHf[0] = 0
+ichun: 50
+ichun: 50
+rahtExtension: 1
+1952396081s bitstream size 87 B
+1952396081s processing time (user): 0 s
+
+readTlv start
+buf->type = 4
+PCCTMC3Decoder3::decodeAttributeBrick start
+AttributeDecoder::decode start
+sliceQpLuma: 4
+attr_desc.attr_num_dimensions_minus1 = 46
+sliceQpLuma: 4
+attribCount = 1
+voxelCount = 50
+uraht_process start
+0
+numPoints = 50
+numAttrs = 1
+enableACInterPred = 0
+attrsLf[0] = 0
+attrsLf.size() = 50
+weightsLf.size() = 50
+attrsHf[0] = 0
+ichun: 50
+ichun: 50
+rahtExtension: 1
+1952396082s bitstream size 82 B
+1952396082s processing time (user): 0 s
+
+readTlv start
+buf->type = 4
+PCCTMC3Decoder3::decodeAttributeBrick start
+AttributeDecoder::decode start
+sliceQpLuma: 4
+attr_desc.attr_num_dimensions_minus1 = 47
+sliceQpLuma: 4
+attribCount = 1
+voxelCount = 50
+uraht_process start
+0
+numPoints = 50
+numAttrs = 1
+enableACInterPred = 0
+attrsLf[0] = 0
+attrsLf.size() = 50
+weightsLf.size() = 50
+attrsHf[0] = 0
+ichun: 50
+ichun: 50
+rahtExtension: 1
+1952396083s bitstream size 87 B
+1952396083s processing time (user): 0 s
+
+readTlv start
+buf->type = 4
+PCCTMC3Decoder3::decodeAttributeBrick start
+AttributeDecoder::decode start
+sliceQpLuma: 4
+attr_desc.attr_num_dimensions_minus1 = 48
+sliceQpLuma: 4
+attribCount = 1
+voxelCount = 50
+uraht_process start
+0
+numPoints = 50
+numAttrs = 1
+enableACInterPred = 0
+attrsLf[0] = 0
+attrsLf.size() = 50
+weightsLf.size() = 50
+attrsHf[0] = 0
+ichun: 50
+ichun: 50
+rahtExtension: 1
+1952396084s bitstream size 84 B
+1952396084s processing time (user): 0 s
+
+readTlv start
+buf->type = 4
+PCCTMC3Decoder3::decodeAttributeBrick start
+AttributeDecoder::decode start
+sliceQpLuma: 4
+attr_desc.attr_num_dimensions_minus1 = 49
+sliceQpLuma: 4
+attribCount = 1
+voxelCount = 50
+uraht_process start
+0
+numPoints = 50
+numAttrs = 1
+enableACInterPred = 0
+attrsLf[0] = 0
+attrsLf.size() = 50
+weightsLf.size() = 50
+attrsHf[0] = 0
+ichun: 50
+ichun: 50
+rahtExtension: 1
+1952396085s bitstream size 81 B
+1952396085s processing time (user): 0 s
+
+readTlv start
+buf->type = 4
+PCCTMC3Decoder3::decodeAttributeBrick start
+AttributeDecoder::decode start
+sliceQpLuma: 4
+attr_desc.attr_num_dimensions_minus1 = 50
+sliceQpLuma: 4
+attribCount = 1
+voxelCount = 50
+uraht_process start
+0
+numPoints = 50
+numAttrs = 1
+enableACInterPred = 0
+attrsLf[0] = 0
+attrsLf.size() = 50
+weightsLf.size() = 50
+attrsHf[0] = 0
+ichun: 50
+ichun: 50
+rahtExtension: 1
+1952396086s bitstream size 83 B
+1952396086s processing time (user): 0 s
+
+readTlv start
+buf->type = 4
+PCCTMC3Decoder3::decodeAttributeBrick start
+AttributeDecoder::decode start
+sliceQpLuma: 4
+attr_desc.attr_num_dimensions_minus1 = 51
+sliceQpLuma: 4
+attribCount = 1
+voxelCount = 50
+uraht_process start
+0
+numPoints = 50
+numAttrs = 1
+enableACInterPred = 0
+attrsLf[0] = 0
+attrsLf.size() = 50
+weightsLf.size() = 50
+attrsHf[0] = 0
+ichun: 50
+ichun: 50
+rahtExtension: 1
+1952396087s bitstream size 85 B
+1952396087s processing time (user): 0 s
+
+readTlv start
+buf->type = 4
+PCCTMC3Decoder3::decodeAttributeBrick start
+AttributeDecoder::decode start
+sliceQpLuma: 4
+attr_desc.attr_num_dimensions_minus1 = 52
+sliceQpLuma: 4
+attribCount = 1
+voxelCount = 50
+uraht_process start
+0
+numPoints = 50
+numAttrs = 1
+enableACInterPred = 0
+attrsLf[0] = 0
+attrsLf.size() = 50
+weightsLf.size() = 50
+attrsHf[0] = 0
+ichun: 50
+ichun: 50
+rahtExtension: 1
+1952396088s bitstream size 84 B
+1952396088s processing time (user): 0 s
+
+readTlv start
+buf->type = 4
+PCCTMC3Decoder3::decodeAttributeBrick start
+AttributeDecoder::decode start
+sliceQpLuma: 4
+attr_desc.attr_num_dimensions_minus1 = 53
+sliceQpLuma: 4
+attribCount = 1
+voxelCount = 50
+uraht_process start
+0
+numPoints = 50
+numAttrs = 1
+enableACInterPred = 0
+attrsLf[0] = 0
+attrsLf.size() = 50
+weightsLf.size() = 50
+attrsHf[0] = 0
+ichun: 50
+ichun: 50
+rahtExtension: 1
+1952396089s bitstream size 81 B
+1952396089s processing time (user): 0 s
+
+readTlv start
+buf->type = 4
+PCCTMC3Decoder3::decodeAttributeBrick start
+AttributeDecoder::decode start
+sliceQpLuma: 4
+attr_desc.attr_num_dimensions_minus1 = 18
+sliceQpLuma: 4
+attribCount = 1
+voxelCount = 50
+uraht_process start
+0
+numPoints = 50
+numAttrs = 1
+enableACInterPred = 0
+attrsLf[0] = 0
+attrsLf.size() = 50
+weightsLf.size() = 50
+attrsHf[0] = 0
+ichun: 50
+ichun: 50
+rahtExtension: 1
+1937006388s bitstream size 112 B
+1937006388s processing time (user): 0 s
+
+readTlv start
+buf->type = 4
+PCCTMC3Decoder3::decodeAttributeBrick start
+AttributeDecoder::decode start
+sliceQpLuma: 4
+attr_desc.attr_num_dimensions_minus1 = 54
+sliceQpLuma: 4
+attribCount = 1
+voxelCount = 50
+uraht_process start
+0
+numPoints = 50
+numAttrs = 1
+enableACInterPred = 0
+attrsLf[0] = 0
+attrsLf.size() = 50
+weightsLf.size() = 50
+attrsHf[0] = 0
+ichun: 50
+ichun: 50
+rahtExtension: 1
+1952396336s bitstream size 86 B
+1952396336s processing time (user): 0 s
+
+readTlv start
+buf->type = 4
+PCCTMC3Decoder3::decodeAttributeBrick start
+AttributeDecoder::decode start
+sliceQpLuma: 4
+attr_desc.attr_num_dimensions_minus1 = 55
+sliceQpLuma: 4
+attribCount = 1
+voxelCount = 50
+uraht_process start
+0
+numPoints = 50
+numAttrs = 1
+enableACInterPred = 0
+attrsLf[0] = 0
+attrsLf.size() = 50
+weightsLf.size() = 50
+attrsHf[0] = 0
+ichun: 50
+ichun: 50
+rahtExtension: 1
+1952396337s bitstream size 84 B
+1952396337s processing time (user): 0 s
+
+readTlv start
+buf->type = 4
+PCCTMC3Decoder3::decodeAttributeBrick start
+AttributeDecoder::decode start
+sliceQpLuma: 4
+attr_desc.attr_num_dimensions_minus1 = 56
+sliceQpLuma: 4
+attribCount = 1
+voxelCount = 50
+uraht_process start
+0
+numPoints = 50
+numAttrs = 1
+enableACInterPred = 0
+attrsLf[0] = 0
+attrsLf.size() = 50
+weightsLf.size() = 50
+attrsHf[0] = 0
+ichun: 50
+ichun: 50
+rahtExtension: 1
+1952396338s bitstream size 88 B
+1952396338s processing time (user): 0 s
+
+readTlv start
+buf->type = 4
+PCCTMC3Decoder3::decodeAttributeBrick start
+AttributeDecoder::decode start
+sliceQpLuma: 4
+attr_desc.attr_num_dimensions_minus1 = 57
+sliceQpLuma: 4
+attribCount = 1
+voxelCount = 50
+uraht_process start
+0
+numPoints = 50
+numAttrs = 1
+enableACInterPred = 0
+attrsLf[0] = 0
+attrsLf.size() = 50
+weightsLf.size() = 50
+attrsHf[0] = 0
+ichun: 50
+ichun: 50
+rahtExtension: 1
+1952396339s bitstream size 84 B
+1952396339s processing time (user): 0 s
+
+readTlv start
+buf->type = 4
+PCCTMC3Decoder3::decodeAttributeBrick start
+AttributeDecoder::decode start
+sliceQpLuma: 4
+attr_desc.attr_num_dimensions_minus1 = 58
+sliceQpLuma: 4
+attribCount = 1
+voxelCount = 50
+uraht_process start
+0
+numPoints = 50
+numAttrs = 1
+enableACInterPred = 0
+attrsLf[0] = 0
+attrsLf.size() = 50
+weightsLf.size() = 50
+attrsHf[0] = 0
+ichun: 50
+ichun: 50
+rahtExtension: 1
+1952396340s bitstream size 87 B
+1952396340s processing time (user): 0 s
+
+readTlv start
+buf->type = 4
+PCCTMC3Decoder3::decodeAttributeBrick start
+AttributeDecoder::decode start
+sliceQpLuma: 4
+attr_desc.attr_num_dimensions_minus1 = 19
+sliceQpLuma: 4
+attribCount = 1
+voxelCount = 50
+uraht_process start
+0
+numPoints = 50
+numAttrs = 1
+enableACInterPred = 0
+attrsLf[0] = 0
+attrsLf.size() = 50
+weightsLf.size() = 50
+attrsHf[0] = 0
+ichun: 50
+ichun: 50
+rahtExtension: 1
+1937006389s bitstream size 110 B
+1937006389s processing time (user): 0 s
+
+readTlv start
+buf->type = 4
+PCCTMC3Decoder3::decodeAttributeBrick start
+AttributeDecoder::decode start
+sliceQpLuma: 4
+attr_desc.attr_num_dimensions_minus1 = 20
+sliceQpLuma: 4
+attribCount = 1
+voxelCount = 50
+uraht_process start
+0
+numPoints = 50
+numAttrs = 1
+enableACInterPred = 0
+attrsLf[0] = 0
+attrsLf.size() = 50
+weightsLf.size() = 50
+attrsHf[0] = 0
+ichun: 50
+ichun: 50
+rahtExtension: 1
+1937006390s bitstream size 115 B
+1937006390s processing time (user): 0 s
+
+readTlv start
+buf->type = 4
+PCCTMC3Decoder3::decodeAttributeBrick start
+AttributeDecoder::decode start
+sliceQpLuma: 4
+attr_desc.attr_num_dimensions_minus1 = 21
+sliceQpLuma: 4
+attribCount = 1
+voxelCount = 50
+uraht_process start
+0
+numPoints = 50
+numAttrs = 1
+enableACInterPred = 0
+attrsLf[0] = 0
+attrsLf.size() = 50
+weightsLf.size() = 50
+attrsHf[0] = 0
+ichun: 50
+ichun: 50
+rahtExtension: 1
+1937006391s bitstream size 112 B
+1937006391s processing time (user): 0 s
+
+readTlv start
+buf->type = 4
+PCCTMC3Decoder3::decodeAttributeBrick start
+AttributeDecoder::decode start
+sliceQpLuma: 4
+attr_desc.attr_num_dimensions_minus1 = 22
+sliceQpLuma: 4
+attribCount = 1
+voxelCount = 50
+uraht_process start
+0
+numPoints = 50
+numAttrs = 1
+enableACInterPred = 0
+attrsLf[0] = 0
+attrsLf.size() = 50
+weightsLf.size() = 50
+attrsHf[0] = 0
+ichun: 50
+ichun: 50
+rahtExtension: 1
+1937006392s bitstream size 112 B
+1937006392s processing time (user): 0 s
+
+readTlv start
+buf->type = 4
+PCCTMC3Decoder3::decodeAttributeBrick start
+AttributeDecoder::decode start
+sliceQpLuma: 4
+attr_desc.attr_num_dimensions_minus1 = 23
+sliceQpLuma: 4
+attribCount = 1
+voxelCount = 50
+uraht_process start
+0
+numPoints = 50
+numAttrs = 1
+enableACInterPred = 0
+attrsLf[0] = 0
+attrsLf.size() = 50
+weightsLf.size() = 50
+attrsHf[0] = 0
+ichun: 50
+ichun: 50
+rahtExtension: 1
+1937006393s bitstream size 115 B
+1937006393s processing time (user): 0 s
+
+readTlv start
+buf->type = 4
+PCCTMC3Decoder3::decodeAttributeBrick start
+AttributeDecoder::decode start
+sliceQpLuma: 4
+attr_desc.attr_num_dimensions_minus1 = 3
+sliceQpLuma: 4
+AttributeDecoder::decodeOpacitiesRaht start
+attribCount = 1
+voxelCount = 50
+uraht_process start
+0
+numPoints = 50
+numAttrs = 1
+enableACInterPred = 0
+attrsLf[0] = 0
+attrsLf.size() = 50
+weightsLf.size() = 50
+attrsHf[0] = 0
+ichun: 50
+ichun: 50
+rahtExtension: 1
+desc.bitdepth = 16
+maxOpacity = 65535
+pointCloud.opacities.size() = 50
+opacitys bitstream size 59 B
+opacitys processing time (user): 0 s
+
+readTlv start
+buf->type = 4
+PCCTMC3Decoder3::decodeAttributeBrick start
+AttributeDecoder::decode start
+sliceQpLuma: 4
+attr_desc.attr_num_dimensions_minus1 = 10
+sliceQpLuma: 4
+attribCount = 1
+voxelCount = 50
+uraht_process start
+0
+numPoints = 50
+numAttrs = 1
+enableACInterPred = 0
+attrsLf[0] = 0
+attrsLf.size() = 50
+weightsLf.size() = 50
+attrsHf[0] = 0
+ichun: 50
+ichun: 50
+rahtExtension: 1
+rot_0s bitstream size 56 B
+rot_0s processing time (user): 0 s
+
+readTlv start
+buf->type = 4
+PCCTMC3Decoder3::decodeAttributeBrick start
+AttributeDecoder::decode start
+sliceQpLuma: 4
+attr_desc.attr_num_dimensions_minus1 = 11
+sliceQpLuma: 4
+attribCount = 1
+voxelCount = 50
+uraht_process start
+0
+numPoints = 50
+numAttrs = 1
+enableACInterPred = 0
+attrsLf[0] = 0
+attrsLf.size() = 50
+weightsLf.size() = 50
+attrsHf[0] = 0
+ichun: 50
+ichun: 50
+rahtExtension: 1
+rot_1s bitstream size 58 B
+rot_1s processing time (user): 0 s
+
+readTlv start
+buf->type = 4
+PCCTMC3Decoder3::decodeAttributeBrick start
+AttributeDecoder::decode start
+sliceQpLuma: 4
+attr_desc.attr_num_dimensions_minus1 = 12
+sliceQpLuma: 4
+attribCount = 1
+voxelCount = 50
+uraht_process start
+0
+numPoints = 50
+numAttrs = 1
+enableACInterPred = 0
+attrsLf[0] = 0
+attrsLf.size() = 50
+weightsLf.size() = 50
+attrsHf[0] = 0
+ichun: 50
+ichun: 50
+rahtExtension: 1
+rot_2s bitstream size 55 B
+rot_2s processing time (user): 0 s
+
+readTlv start
+buf->type = 4
+PCCTMC3Decoder3::decodeAttributeBrick start
+AttributeDecoder::decode start
+sliceQpLuma: 4
+attr_desc.attr_num_dimensions_minus1 = 13
+sliceQpLuma: 4
+attribCount = 1
+voxelCount = 50
+uraht_process start
+0
+numPoints = 50
+numAttrs = 1
+enableACInterPred = 0
+attrsLf[0] = 0
+attrsLf.size() = 50
+weightsLf.size() = 50
+attrsHf[0] = 0
+ichun: 50
+ichun: 50
+rahtExtension: 1
+rot_3s bitstream size 62 B
+rot_3s processing time (user): 0 s
+
+readTlv start
+buf->type = 4
+PCCTMC3Decoder3::decodeAttributeBrick start
+AttributeDecoder::decode start
+sliceQpLuma: 4
+attr_desc.attr_num_dimensions_minus1 = 7
+sliceQpLuma: 4
+attribCount = 1
+voxelCount = 50
+uraht_process start
+0
+numPoints = 50
+numAttrs = 1
+enableACInterPred = 0
+attrsLf[0] = 0
+attrsLf.size() = 50
+weightsLf.size() = 50
+attrsHf[0] = 0
+ichun: 50
+ichun: 50
+rahtExtension: 1
+scale_0s bitstream size 53 B
+scale_0s processing time (user): 0 s
+
+readTlv start
+buf->type = 4
+PCCTMC3Decoder3::decodeAttributeBrick start
+AttributeDecoder::decode start
+sliceQpLuma: 4
+attr_desc.attr_num_dimensions_minus1 = 8
+sliceQpLuma: 4
+attribCount = 1
+voxelCount = 50
+uraht_process start
+0
+numPoints = 50
+numAttrs = 1
+enableACInterPred = 0
+attrsLf[0] = 0
+attrsLf.size() = 50
+weightsLf.size() = 50
+attrsHf[0] = 0
+ichun: 50
+ichun: 50
+rahtExtension: 1
+scale_1s bitstream size 53 B
+scale_1s processing time (user): 0 s
+
+readTlv start
+buf->type = 4
+PCCTMC3Decoder3::decodeAttributeBrick start
+AttributeDecoder::decode start
+sliceQpLuma: 4
+attr_desc.attr_num_dimensions_minus1 = 9
+sliceQpLuma: 4
+attribCount = 1
+voxelCount = 50
+uraht_process start
+0
+numPoints = 50
+numAttrs = 1
+enableACInterPred = 0
+attrsLf[0] = 0
+attrsLf.size() = 50
+weightsLf.size() = 50
+attrsHf[0] = 0
+ichun: 50
+ichun: 50
+rahtExtension: 1
+scale_2s bitstream size 51 B
+scale_2s processing time (user): 0 s
+
+readTlv start
+buf->type = -1
+Now output pointcloud
+Total bitstream size 7549 B
+Processing time (wall): 0.042 s
+Processing time (user): 0.024 s

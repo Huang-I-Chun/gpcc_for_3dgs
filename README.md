@@ -14,7 +14,7 @@ This is a project that extends original GPCC codec (https://github.com/MPEGGroup
 - cmake ..
 - make
 
-## Running
+## Example Usage
 
 This TMC13 codec implementation encodes frame sequences. A single binary
 contains the encoder and decoder implementation, with selection using
