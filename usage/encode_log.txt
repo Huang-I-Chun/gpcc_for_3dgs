@@ -1,4 +1,4 @@
-MPEG PCC tmc3 version 
+MPEG PCC tmc3 version cf5f9ef
 main() start
 + Effective configuration parameters
     mode                  : 0
@@ -6508,7 +6508,7 @@ After countingSort:
 encodeGeometryOctree Finish:
 Back to PCCTMC3Encoder3::encodeGeometryBrick
 positions bitstream size 275 B (44 bpp)
-positions processing time (user): 0.006 s
+positions processing time (user): 0.009 s
 attribute compression start
 params->attributeIdxMap.first = f_dc_0
 AttributeEncoder::encode start
@@ -7634,5 +7634,5 @@ scale_2s bitstream size 51 B (8.16 bpp)
 scale_2s processing time (user): 0 s
 Total frame size 6869 B
 Total bitstream size 7549 B
-Processing time (wall): 0.043 s
-Processing time (user): 0.024 s
+Processing time (wall): 0.038 s
+Processing time (user): 0.03 s

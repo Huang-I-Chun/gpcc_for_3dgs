@@ -1,4 +1,4 @@
-MPEG PCC tmc3 version 
+MPEG PCC tmc3 version cf5f9ef
 main() start
 + Effective configuration parameters
     mode                  : 1
@@ -194,7 +194,7 @@ readTlv start
 buf->type = 2
 PCCTMC3Decoder3::decodeGeometryBrick start
 positions bitstream size 275 B
-positions processing time (user): 0.004 s
+positions processing time (user): 0.008 s
 
 readTlv start
 buf->type = 4
@@ -1548,5 +1548,5 @@ readTlv start
 buf->type = -1
 Now output pointcloud
 Total bitstream size 7549 B
-Processing time (wall): 0.042 s
+Processing time (wall): 0.037 s
 Processing time (user): 0.024 s

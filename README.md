@@ -1,9 +1,9 @@
-# Using GPCC to Compress 3D Gaussain
+# Using G-PCC to Compress 3D Gaussain
 
-This is a project that extends original GPCC codec (https://github.com/MPEGGroup/mpeg-pcc-tmc13) to make it available to compress 3D Gaussian, there are some main problems solved in this project:
+This is a project that extends original G-PCC codec (https://github.com/MPEGGroup/mpeg-pcc-tmc13) to make it available to compress 3D Gaussian, there are some main problems solved in this project:
 
-- 3D Gaussian contains many more attributes than traditional point cloud, so we need to extend the number of attributes that can compress in GPCC
-- 3D Gaussian attributes contain floating points and negative numbers. However, GPCC only accepts positive integers as input attributes
+- 3D Gaussian contains many more attributes than traditional point cloud, so we need to extend the number of attributes that can compress in G-PCC
+- 3D Gaussian attributes contain floating points and negative numbers. However, G-PCC only accepts positive integers as input attributes
 
 ## Building
 
@@ -16,57 +16,26 @@ This is a project that extends original GPCC codec (https://github.com/MPEGGroup
 
 ## Example Usage
 
-This TMC13 codec implementation encodes frame sequences. A single binary
-contains the encoder and decoder implementation, with selection using
-the `--mode` option. Documentation of options is provided via the
-`--help` command line option.
+An example usage script is in `usage/compress_decode.ipynb`. This notebook gives the example of generating `encode.cfg` for G-PCC compression and using `subprocess` to run the G-PCC encode and decode command to compress an example 3D Gaussian `usage/bonsai_50p.ply` we provide, which is the first 50 points of the well-known bonsai 3D Gaussian.
 
-### Runtime configuration and configuration files
+## New Option Different from Original G-PCC
 
-All command line parameters may be specified in a configuration file.
-A set of configuration file templates compliant with the current Common
-Test Conditions is provided in the cfg/ directory.
+We add the following attributes in the G-PCC encoding/decoding phase:
 
-### Example
+`"f_dc_0", "f_dc_1", "f_dc_2", "f_rest_0", "f_rest_1","f_rest_2","f_rest_3","f_rest_4","f_rest_5","f_rest_6","f_rest_7","f_rest_8","f_rest_9","f_rest_10","f_rest_11","f_rest_12","f_rest_13","f_rest_14","f_rest_15","f_rest_16","f_rest_17","f_rest_18","f_rest_19","f_rest_20","f_rest_21","f_rest_22","f_rest_23","f_rest_24","f_rest_25","f_rest_26","f_rest_27","f_rest_28","f_rest_29","f_rest_30","f_rest_31","f_rest_32","f_rest_33","f_rest_34","f_rest_35","f_rest_36","f_rest_37","f_rest_38","f_rest_39","f_rest_40","f_rest_41","f_rest_42","f_rest_43","f_rest_44","opacity","scale_0", "scale_1", "scale_2", "rot_0", "rot_1", "rot_2", "rot_3"`
 
-To generate the configuration files, run the gen-cfg.sh script:
+Each attribute will have the following 3 arguments that can be added in encode.cfg, we use `{attr}` to represent the attribute name:
 
-```console
-mpeg-pcc-tmc13/cfg$ ../scripts/gen-cfg.sh --all
-```
+- `attrbute: {attr}`: This informs G-PCC that we want to compress `{attr}`
+- `{attr}_qp`: Quantization parameter that uses on this `{attr}`, each attribute can be set individually. The range is related to `--bitdepth`, should be within [4, 51 + 6 * (bitdepth - 8)], but I suggest this value should smaller than 75.
+- `{attr}_scale`: The scaling factor of `{attr}`, each attribute can be set individually. The default value is 65535, which is the maximum value of the scaling factor, indicating the best precision in compress/decode.
 
-An example script (`scripts/Makefile.tmc13-step`) demonstrates how
-to launch the encoder, decoder and metric software for a single
-input frame. The VERBOSE=1 make variable shows the detailed command
-execution sequence. Further documentation of the parameters are
-contained within the script.
+The argument usage example can ref to `usage/compress_decode.ipynb`.
 
-The following example encodes and decodes frame 0100 of the sequence
-`Ford_01_q_1mm`, making use of the configuration file
-`cfg/lossy-geom-no-attrs/ford_01_q1mm/r01/encoder.cfg` and storing
-the intermediate results in the output directory
-`experiment/lossy-geom-no-attrs/ford_01_q1mm/r01/`.
+## Tenichical Details
 
-```console
-mpeg-pcc-tmc13$ make -f $PWD/scripts/Makefile.tmc13-step \
-    -C experiment/lossy-geom-no-attrs/ford_01_q1mm/r01/ \
-    VPATH=$PWD/cfg/octree-predlift/lossy-geom-no-attrs/ford_01_q1mm/r01/ \
-    ENCODER=$PWD/build/tmc3/tmc3 \
-    DECODER=$PWD/build/tmc3/tmc3 \
-    PCERROR=/path/to/pc_error \
-    SRCSEQ=/path/to/Ford_01_q_1mm/Ford_01_vox1mm-0100.ply \
-    NORMSEQ=/path/to/Ford_01_q_1mm/Ford_01_vox1mm-0100.ply
+We ref reflecent encoding method to encode all attributes individually
 
-  [encode]  Ford_01_vox1mm-0100.ply.bin <- /path/to/Ford_01_q_1mm/Ford_01_vox1mm-0100.ply
-  [md5sum]  Ford_01_vox1mm-0100.ply.bin.md5
-  [md5sum]  Ford_01_vox1mm-0100.ply.bin.ply.md5
-  [decode]  Ford_01_vox1mm-0100.ply.bin.decoded.ply <- Ford_01_vox1mm-0100.ply.bin
-  [md5sum]  Ford_01_vox1mm-0100.ply.bin.decoded.ply.md5
-  [metric]  Ford_01_vox1mm-0100.ply.bin.decoded.ply.pc_error <- Ford_01_vox1mm-0100.ply.bin.decoded.ply
-```
+How we scale, and deal with negative number
 
-## Intra and inter prediction
-
-The yaml files stored directly under the cfg/ folder correspond to intra prediction, and yaml files stored under cfg/inter/ folder correspond to inter prediction. The gen-cfg.sh script is updated such that intra/inter prediction may be specified as an additional option to produce the configuration files corresponding to intra/inter prediction; alternately, the "--all" option may be used to generate the configuration for intra and inter prediction for all tool configurations.
-
-After running the gen-cfg.sh script, the configuration files for intra and inter prediction are generated in separate folders. The configuration files corresponding to inter prediction are generated in folders with "-inter" suffix. For example, configuration files corresponding to octree and predicting/lifting transform using intra prediction are generated in the folder octree-predlift/ (as was the case in some earlier versions of the test model), and configuration files corresponding to octree and predicting/lifting transform using inter prediction are generated in the folder octree-predlift-inter/.
+We ignore nx, but will add it back while decoding
