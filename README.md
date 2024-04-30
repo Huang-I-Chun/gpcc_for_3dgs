@@ -23,6 +23,8 @@ An example usage script is in `usage/compress_decode.ipynb`, simply press `Run a
 
 - `usage/decode.ply`: The decode 3D Gaussain after G-PCC decode step, you can compare it with `usage/bonsai_50p.ply`. There will be the following differences: (i) floating point precision, which is related to the scaling factor (ii) point order, which is reordered after G-PCC octree sorting process
 
+- `usage/bonsai_50p.bin`: The compress binary file
+
 - `usage/encode.cfg`: The encoding parameters used in G-PCC encoding phase
 
 - `usage/decode.cfg`: The decode parameters used in G-PCC decoding phase
